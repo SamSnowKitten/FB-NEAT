@@ -37,7 +37,5 @@ def scanforComet(screen, currentx):
 	for pt in zip(*loc2[::-1]):
 		cv2.rectangle(img_rgb, pt, (pt[0] + w, pt[1] + h), (0,0,255), 2)
 
-	# cv2.imshow('wefwe', img_rgb)
-	# cv2.waitKey(0)
 	return img_rgb, returnValue
 # scanforComet(cv2.imread('test.png'))
